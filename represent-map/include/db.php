@@ -44,7 +44,7 @@ $sg_enabled = false;
 
   // Choose your map's location here. If you're not sure
   // about this, check the URL on the Startup Genome website.
-  $sg_location = '';
+  $sg_location = '/recife-pernambuco-bra';
   // Examples:
   // $sg_location = '/city/los-angeles-ca';
   // $sg_location = '/state/ca-us';
@@ -64,7 +64,7 @@ $sg_enabled = false;
 // category will appear in the marker list, and you can
 // run events_get.php in your browser (or a chron) to populate
 // it with data from eventbrite.
-$show_events = true;
+$show_events = false;
 
     // put your eventbrite api key here
     $eb_app_key = "";
@@ -76,31 +76,31 @@ $show_events = true;
 
     // specify city to search in and around
     // example: Santa+Monica
-    $eb_city = "Santa+Monica";
+    $eb_city = "Recife";
 
     // specify search radius (in miles)
     $eb_within_radius = 50;
 
 
 // set timezone
-// date_default_timezone_set("America/Los_Angeles");
+date_default_timezone_set("America/Recife");
 
 // HTML that goes just before </head>
 $head_html = "";
 
 // The <title></title> tag
-$title_tag = "represent.la - map of the Los Angeles startup community";
+$title_tag = "Manguez.al - The map of the Recife startup community";
 
 // The latitude & longitude to center the initial map
-$lat_lng = "34.034453,-118.341293";
+$lat_lng = "-8.036421,-34.904679";
 
 // Domain to use for various links
-$domain = "http://www.represent.la";
+$domain = "http://map.manguez.al";
 
 // Twitter username and default share text
 $twitter = array(
-  "share_text" => "Let's put Los Angeles startups on the map:",
-  "username" => "representla"
+  "share_text" => "Let's put Recife startups on the map:",
+  "username" => "Manguezal Map"
 );
 
 // Short blurb about this site (visible to visitors)
